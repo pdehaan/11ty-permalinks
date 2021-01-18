@@ -10,5 +10,7 @@ layout: base
 <footer>
   <hr/>
   <p>Author: {{ author }}</p>
-  <p>Permalink: {{ page.url }}</p>
+  <p>Permalink: {{ page.url | url }}</p>
+  <p>Permalink: {{ page.url | url | stripLeadingSlash }}</p>
+  <p>Permalink: {{ page.url | stripLeadingSlash }}</p>
 </footer>
