@@ -1,0 +1,22 @@
+---
+templateEngineOverride: liquid
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <link rel="canonical" href="{{ site.baseUrl | url }}{{ page.url | url }}" />
+  </head>
+  <body>
+    <div>
+      <main>{{ content }}</main>
+    </div>
+
+    <aside>
+      <p>Debug:</p>
+      <pre>{{ page | stringify }}</pre>
+    </aside>
+  </body>
+</html>
